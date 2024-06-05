@@ -6,41 +6,38 @@
     <title>{website.siteTitle}</title>
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/base.less">
 </head>
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-
     <div class="site-container">
-      <header class="site-header">
-        <!-- site navigation -->
-        <squarespace:navigation navigationId="mainNav" template="site-navigation" />
+        <header class="site-header">
+            <!-- site navigation -->
+            <squarespace:navigation navigationId="siteNav" template="site-navigation" />
 
-        <!-- site title or logo -->
-        {.section website}
-          <h1 class="site-title-heading" data-content-field="site-title">
-            <a href="/" class="site-title-link">{siteTitle}</a>
-          </h1>
-        {.end}
-      </header>
+            <!-- site title or logo -->
+            {.section website}
+                <h1 class="site-title-heading" data-content-field="site-title">
+                    <a href="/" class="site-title-link">{siteTitle}</a>
+                </h1>
+            {.end}
+        </header>
 
-      <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content">
-        <h1>JB COMPUTERS</h1>
-      </main>
+        <!-- cms content injection point -->
+        <main class="content-container" role="main" data-content-field="main-content">
+            <h1>JB COMPUTERS</h1>
+        </main>
 
-      <!--Footer with open block field -->
-      <footer class="site-footer">
-        <squarespace:block-field id="footerBlocks" columns="12" />
-        <p>&copy; 2024 JB Computers. All rights reserved.</p>
-      </footer>
+        <!--Footer with open block field -->
+        <footer class="site-footer">
+            <squarespace:block-field id="footerBlocks" columns="12" />
+            <p>&copy; 2024 JB Computers. All rights reserved.</p>
+        </footer>
     </div>
 
     <!-- combo and minify scripts when not logged in -->
-    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <script src="js/script.js"></script>
+    <squarespace:script src="scripts/site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <script src="scripts/site.js"></script>
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
-
 </body>
 </html>
-
