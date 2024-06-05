@@ -23,11 +23,9 @@
         {.end}
       </header>
 
-     
-
-s      <!-- cms content injection point -->
+      <!-- cms content injection point -->
       <main class="content-container" role="main" data-content-field="main-content">
-       <squarespace:main-content id="homepage" src="homepage.html" />
+       {squarespace.main-content}
       </main>
 
       <!--Footer with open block field -->
