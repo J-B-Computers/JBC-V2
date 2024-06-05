@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <!-- include system scripts, page meta, and header code injection -->
-
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="css/styles.css">
     
     {squarespace-headers}
   </head>
@@ -38,10 +39,10 @@
     </div>
 
     <!-- combo and minify scripts when not logged in -->
-
+     <squarespace:script src="scripts/site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+      <squarespace:script src="scripts/script.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <!-- other scripts, and footer code injection -->
-     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-      <squarespace:script src="script.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+
     {squarespace-footers}
 
   </body>
