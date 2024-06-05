@@ -57,5 +57,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
       modal.classList.remove('modal-show');
     });
   
-    window.addEventListener('click', (e) =>
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('modal-show');
+      }
+    });
+  });
   
