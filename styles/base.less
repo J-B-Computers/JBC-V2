@@ -1,10 +1,6 @@
-/* General styles
-***************************************************/
-
+/* General styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 100%;
   font-weight: normal;
   margin: 0;
@@ -20,59 +16,51 @@ body {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   margin: 20px auto;
-
-  h1, h2, h3 {
-    font-weight: normal;
-    line-height: 1.2em;
-  }
-
-  a {
-    color: cornflowerblue;
-    text-decoration: none;
-
-    &.disabled {
-      color: #ccc;
-    }
-  }
 }
 
 .site-header {
   margin-bottom: 4vw;
-  background-color: #4CAF50;
+  background-color: #003366; /* Dark blue background */
   color: white;
   padding: 20px 0;
+  text-align: center;
+}
 
-  .site-title-heading {
-    margin: 0;
-    font-size: 2em;
+.site-title-heading {
+  margin: 0;
+  font-size: 2em;
+}
 
-    .site-title-link {
-      color: white;
-      font-weight: 400;
-      text-decoration: none;
-    }
-  }
+.site-title-link {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .site-navigation {
-  text-align: center;
+  background-color: #003366; /* Dark blue background */
+  padding: 10px 0;
+}
 
-  .nav-links {
-    list-style: none;
-    padding: 0;
+.site-navigation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
 
-    li {
-      display: inline;
-      margin-right: 20px;
+.site-navigation-item {
+  margin: 0 1em;
 
-      a {
-        color: white;
-        font-weight: 700;
+  a {
+    color: white; /* White text */
+    text-decoration: none;
+    font-size: 1.2em; /* Larger font */
+    font-weight: bold;
 
-        &:hover {
-          color: #ddd;
-        }
-      }
+    &:hover {
+      color: #ccc; /* Lighter color on hover */
     }
   }
 }
@@ -89,57 +77,13 @@ body {
   color: white;
   text-align: center;
   padding: 10px 0;
-
-  a {
-    color: white;
-    text-decoration: underline;
-
-    &:hover {
-      color: #ddd;
-    }
-  }
 }
 
-/* Homepage
-***************************************************/
-
-body.homepage { }
-
-/* Blog list
-***************************************************/
-
-body.collection-type-blog.view-list {
-
-  .blog-list-item + .blog-list-item {
-    margin-top: 3vw;
-  }
+.site-footer a {
+  color: white;
+  text-decoration: underline;
 }
 
-/* Break grid and stack blocks on small screens
-***************************************************/
-
-@media screen and (max-width: 640px) {
-  @import 'sqs-grid-breaker';
-
-  .site-container {
-    padding: 10px;
-  }
-
-  .site-title-heading {
-    font-size: 1.5em;
-  }
-
-  .nav-links {
-    display: block;
-    text-align: left;
-
-    li {
-      display: block;
-      margin: 5px 0;
-
-      a {
-        font-size: 1em;
-      }
-    }
-  }
+.site-footer a:hover {
+  color: #ddd;
 }
