@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <!-- include system scripts, page meta, and header code injection -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="styles.css">
     
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
@@ -39,8 +39,9 @@
 
     <!-- combo and minify scripts when not logged in -->
       
-      <script src="scripts/site.js"></script>
-      <script src="scripts/script.js"></script>
+      <script src="site.js"></script>
+      <script src="script.js"></script>
+
     <!-- other scripts, and footer code injection -->
 
   </body>
