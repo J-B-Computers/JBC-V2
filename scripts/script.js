@@ -48,8 +48,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const modalClose = document.querySelector('.modal-close');
   
     modalOpen.forEach(button => {
-      button.addEventListener('click', () => {
-        modal.classList.add('modal-show');
+      button.addEventListener('click', () => {modal.classList.add('modal-show');
       });
     });
   
