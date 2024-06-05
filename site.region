@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="css/styles.css">
     
-    {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
@@ -44,7 +43,6 @@
       <script src="scripts/site.js"></script>
       <script src="scripts/script.js"></script>
     <!-- other scripts, and footer code injection -->
-    {squarespace-footers}
 
   </body>
 </html>
