@@ -39,7 +39,25 @@ body {
 
 .site-navigation {
   background-color: #003366; /* Dark blue background */
-  padding: 10px 0;
+  padding: 1em;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    li {
+      display: inline;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 .site-navigation-list {
