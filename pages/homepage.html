@@ -111,8 +111,8 @@
     </div>
 
     <!-- combo and minify scripts when not logged in -->
-    <squarespace:script src="scripts/site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-    <script src="js/script.js"></script>
+    <script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+    <script src="script.js"></script>
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
 
