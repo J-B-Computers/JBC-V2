@@ -38,8 +38,8 @@
     </div>
 
     <!-- combo and minify scripts when not logged in -->
-      <squarespace:script src="scripts/site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
-      <squarespace:script src="scripts/script.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+      <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+      <squarespace:script src="script.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <!-- other scripts, and footer code injection -->
 
   </body>
